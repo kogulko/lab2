@@ -73,8 +73,7 @@ public class MainView extends VerticalLayout {
         hField.setSuffixComponent(hSuffix);
         kSuffix.setText("* z");
         kField.setSuffixComponent(kSuffix);
-        Div details = new Div();
-        details.setText("Дана поверхня задовольняє рівняння, зображене на малюнку");
+
         surfacesList.setSpacing(false);
 
         submit.addClickListener(click -> {
@@ -82,8 +81,8 @@ public class MainView extends VerticalLayout {
                     dField.getValue(), eField.getValue(), fField.getValue(), gField.getValue(), hField.getValue(),
                     kField.getValue(), lField.getValue());
             Image image = new Image(surface.imageSrc(), surface.name());
-            // image.margin
-            // image.
+            Div details = new Div();
+            details.setText("Дана поверхня задовольняє рівняння, зображене на малюнку");
             Div surfaceEquation = new Div();
             surfaceEquation.setText(surface.toString());
             surfacesList.add(new HorizontalLayout(new VerticalLayout(new H4(surface.name()), surfaceEquation, details), image));
