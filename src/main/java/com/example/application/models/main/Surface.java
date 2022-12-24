@@ -8,11 +8,15 @@ public class Surface {
   }
 
   public String name() {
-    return "Поверхня загального вигляду";
+    return "Дане рівняння не відповідає жодній поверхні другого порядку";
   }
 
   public String toString() {
-    return  equation.toString();
+    return equation.toString();
+  }
+
+  public String imageSrc() {
+    return "images/num0.png";
   }
 }
 
@@ -24,6 +28,10 @@ class Elipsoid extends Surface {
   public String name() {
     return "Еліпсоїд";
   }
+
+  public String imageSrc() {
+    return "images/num1.png";
+  }
 }
 
 class ImaginaryElipsoid extends Surface {
@@ -33,6 +41,10 @@ class ImaginaryElipsoid extends Surface {
 
   public String name() {
     return "Уявний еліпсоїд";
+  }
+
+  public String imageSrc() {
+    return "images/num2.png";
   }
 }
 
@@ -44,6 +56,10 @@ class ImaginaryCone extends Surface {
   public String name() {
     return "Уявний конус";
   }
+
+  public String imageSrc() {
+    return "images/num3.png";
+  }
 }
 
 class SingleCavityHyperboloid extends Surface {
@@ -53,6 +69,10 @@ class SingleCavityHyperboloid extends Surface {
 
   public String name() {
     return "Однопорожнинний гіперболоїд";
+  }
+
+  public String imageSrc() {
+    return "images/num4.png";
   }
 }
 
@@ -64,6 +84,10 @@ class DoubleCavityHyperboloid extends Surface {
   public String name() {
     return "Двопорожнинний гіперболоїд";
   }
+
+  public String imageSrc() {
+    return "images/num5.png";
+  }
 }
 
 class Cone extends Surface {
@@ -73,6 +97,10 @@ class Cone extends Surface {
 
   public String name() {
     return "Конус";
+  }
+
+  public String imageSrc() {
+    return "images/num6.png";
   }
 }
 
@@ -84,6 +112,10 @@ class EllipticParaboloid extends Surface {
   public String name() {
     return "Еліптичний параболоїд";
   }
+
+  public String imageSrc() {
+    return "images/num7.png";
+  }
 }
 
 class HyperbolicParaboloid extends Surface {
@@ -93,6 +125,10 @@ class HyperbolicParaboloid extends Surface {
 
   public String name() {
     return "Гіперболічний параболоїд";
+  }
+
+  public String imageSrc() {
+    return "images/num8.png";
   }
 }
 
@@ -104,6 +140,10 @@ class EllipticCylinder extends Surface {
   public String name() {
     return "Еліптичний циліндр";
   }
+
+  public String imageSrc() {
+    return "images/num9.png";
+  }
 }
 
 class ImaginaryEllipticCylinder extends Surface {
@@ -113,6 +153,10 @@ class ImaginaryEllipticCylinder extends Surface {
 
   public String name() {
     return "Уявний еліптичний циліндр";
+  }
+
+  public String imageSrc() {
+    return "images/num10.png";
   }
 }
 
@@ -124,6 +168,10 @@ class PairOfImaginaryIntersectedPlanes extends Surface {
   public String name() {
     return "Пара уявних площин, що перетинаються";
   }
+
+  public String imageSrc() {
+    return "images/num11.png";
+  }
 }
 
 class HyperbolicCylinder extends Surface {
@@ -133,6 +181,10 @@ class HyperbolicCylinder extends Surface {
 
   public String name() {
     return "Гіперболічний циліндр";
+  }
+
+  public String imageSrc() {
+    return "images/num12.png";
   }
 }
 
@@ -144,6 +196,10 @@ class PairOfIntersectedPlanes extends Surface {
   public String name() {
     return "Пара площин, що перетинаються";
   }
+
+  public String imageSrc() {
+    return "images/num13.png";
+  }
 }
 
 class ParabolicCylinder extends Surface {
@@ -153,6 +209,10 @@ class ParabolicCylinder extends Surface {
 
   public String name() {
     return "Параболічний циліндр";
+  }
+
+  public String imageSrc() {
+    return "images/num14.png";
   }
 }
 
@@ -164,6 +224,10 @@ class PairOfParallelPlanes extends Surface {
   public String name() {
     return "Пара паралельних площин";
   }
+
+  public String imageSrc() {
+    return "images/num15.png";
+  }
 }
 
 class PairOfImaginaryParallelPlanes extends Surface {
@@ -174,6 +238,10 @@ class PairOfImaginaryParallelPlanes extends Surface {
   public String name() {
     return "Пара уявних паралельних площин";
   }
+
+  public String imageSrc() {
+    return "images/num16.png";
+  }
 }
 
 class PairOfMatchingPlanes extends Surface {
@@ -183,5 +251,9 @@ class PairOfMatchingPlanes extends Surface {
 
   public String name() {
     return "Пара співпадаючих площин";
+  }
+
+  public String imageSrc() {
+    return "images/num17.png";
   }
 }

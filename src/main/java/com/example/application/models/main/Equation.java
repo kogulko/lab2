@@ -29,6 +29,6 @@ public class Equation {
 
   public String toString() {
     return String.format(
-        "%s: %fx^2 + %fy^2 + %fz^2 + %fxy + %fxz + %fyz + %fx + %fy + %fz + %f", a, b, c, d, e, f, g, h, k, l);
+        "%.2fx^2 + %.2fy^2 + %.2fz^2 + %.2fxy + %.2fxz + %.2fyz + %.2fx + %.2fy + %.2fz + %.2f = 0", a, b, c, d, e, f, g, h, k, l);
   }
 }
